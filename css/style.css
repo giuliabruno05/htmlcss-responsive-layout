@@ -1,0 +1,75 @@
+/* regole generali */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: 'PT Sans', sans-serif;
+}
+/* regole header */
+
+header{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    background-color: #0084fd;
+}
+
+.row{ 
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{ 
+    width: 90%;
+    display: flex;
+}
+.menu.desktop{ 
+    display: none
+}
+/* menu desktop */
+@media screen and (min-width:1024px){
+    .menu.desktop{ 
+        display: block;
+        
+    }
+    .menu.mobile{ 
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBUG */
+.logo{ 
+    background-color: blueviolet;
+    width: 100px;
+    height: 50px;
+}
+.menu.desktop{ 
+    background-color:yellow;
+    width: 100px;
+    height: 50px;
+}
+.menu.mobile{ 
+    background-color:green;
+    width: 50px;
+    height: 50px;
+}
