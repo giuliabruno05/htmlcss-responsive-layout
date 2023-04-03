@@ -74,6 +74,7 @@ header{
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
+        justify-content: space-between;
 
     }
 
@@ -94,16 +95,58 @@ header{
         display: flex;
         gap: 20px;
         width: 70%;
-        width: 0 auto;
+        margin: 0 auto;
     }
    
 }
 
+/* sezione testimonials */
+.square{ 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* sezione benefit */
+#benefit{ 
+    background-color: #9792e4;
+    min-height: 500px;
+}
+
+.card{ 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* versione tablet benefit */
+@media  screen and (min-width:768px) {
+    #benefit .container{ 
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card{ 
+        width:calc(100% / 2 - 20px)
+    }
+}
+
+/* versione desktop benefit */
+@media screen and (min-width:1024px){
+    .card{ 
+        width:calc(100% / 3 - 20px)
+    }
+}
 
 
+/* regole generali desktop */
 
-
-
+@media screen and (min-width:1024px){
+    .container{ 
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 
 
 
@@ -149,4 +192,16 @@ header{
     height: 200px;
     border: solid 2px black;
 }
- 
+/* testimonials */
+.square{ 
+    background-color:blue;
+    height: 100px;
+    border: solid 2px black;
+    
+}
+/* sezione card */
+.card{ 
+    background-color: burlywood;
+    height: 200px;
+    border: solid 2px black;
+}
