@@ -7,6 +7,7 @@
 
 body{
     font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
 }
 /* regole header */
 
@@ -139,6 +140,62 @@ header{
 }
 
 
+
+
+/* sezione about */
+.text.about, .photo.about{ 
+    margin-bottom: 20px;
+    width: 100%;
+}
+/* versione tablet */
+@media  screen and (min-width:768px) {
+    #about .container{ 
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+       
+        
+    }
+
+    
+}
+/* versione desktop */
+
+@media  screen and (min-width:1024px) {
+    #about .container{ 
+        display: flex;
+        gap: 20px;
+        width: 75%;
+        margin: 0 auto;
+       
+        
+    }
+
+    
+}
+/* sezione start */
+
+#start{ 
+    background-color: #9792e4;
+}
+
+/* footer */
+footer{
+    background-color:#333333;
+}
+.text-footer{ 
+    padding:20px;
+    text-align: center;
+}
+/* versione tablet */
+
+@media screen and (min-width:768){
+    .text-footer{ 
+        font-size: 1.2rem;
+    }
+}
+
+
 /* regole generali desktop */
 
 @media screen and (min-width:1024px){
@@ -147,11 +204,6 @@ header{
         margin: 0 auto;
     }
 }
-
-
-
-
-
 
 /* DEBUG */
 
@@ -204,4 +256,27 @@ header{
     background-color: burlywood;
     height: 200px;
     border: solid 2px black;
+}
+/* sezione about us */
+
+.text.about{ 
+    background-color:olive;
+    height: 200px;
+    border: solid 2px black;
+   
+}
+.photo.about{ 
+    background-color: orange;
+    height: 200px;
+    border: solid 2px black;
+   
+}
+
+/* sezione start */
+
+.text-start{ 
+    background-color:purple;
+    height: 200px;
+    border: solid 2px black;
+    width: 200px;
 }
