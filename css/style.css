@@ -1,50 +1,103 @@
 /* regole generali */
-*{ 
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{ 
+body{
     font-family: 'PT Sans', sans-serif;
 }
 /* regole header */
 
-header{ 
+header{
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2000;
     width: 100%;
     background-color: #0084fd;
+
+
 }
 
-.row{ 
+.row{
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
-.container{ 
+.container{
     width: 90%;
-    display: flex;
+    margin: 0 auto;
+
+
 }
-.menu.desktop{ 
+.menu.desktop{
     display: none
 }
 /* menu desktop */
 @media screen and (min-width:1024px){
-    .menu.desktop{ 
+    .menu.desktop{
         display: block;
-        
+
     }
-    .menu.mobile{ 
+    .menu.mobile{
         display: none;
     }
 }
 
+/* regole main */
+/* sezione developer  */
+#developer{
+    padding-top: 80px;
 
+}
+.col{
+    margin-bottom: 20px;
+}
+
+
+/* sezione developer */
+@media screen and (min-width:768px) {
+    .col{
+        width:calc(100% / 3 * 2 - 20px)
+
+    }
+    .col.app{
+        width:calc(100% / 3 - 20px)
+
+    }
+    #developer .container{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+    }
+
+}
+
+/* sezione plannig*/
+#planning{ 
+    background-color: #9792e4;
+    min-height: 300px;
+}
+.plan{ 
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* plan versione desktop */
+@media screen and (min-width: 1024px) {
+    #planning .container{ 
+        display: flex;
+        gap: 20px;
+        width: 70%;
+        width: 0 auto;
+    }
+   
+}
 
 
 
@@ -58,18 +111,42 @@ header{
 
 
 /* DEBUG */
-.logo{ 
+
+.logo{
     background-color: blueviolet;
     width: 100px;
     height: 50px;
 }
-.menu.desktop{ 
+.menu.desktop{
     background-color:yellow;
     width: 100px;
     height: 50px;
 }
-.menu.mobile{ 
+.menu.mobile{
     background-color:green;
     width: 50px;
     height: 50px;
 }
+
+.developer{
+    display: flex;
+}
+.col{
+    background-color: aqua;
+
+    height: 100px;
+}
+
+.col.app{
+    background-color: black;
+
+    height: 100px;
+}
+
+.plan{ 
+    background-color: red;
+    
+    height: 200px;
+    border: solid 2px black;
+}
+ 
